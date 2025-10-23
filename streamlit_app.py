@@ -77,7 +77,7 @@ def generate_panel_image(client: OpenAI, panel: Panel) -> Panel:
             "Comic book style, colorful ink outlines, panel illustration. "
             + panel.prompt
         ),
-        size="512x512",
+        size="1024x1024",
     )
     image_base64 = response.data[0].b64_json
     image_bytes = base64.b64decode(image_base64)
