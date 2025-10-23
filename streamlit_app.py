@@ -25,7 +25,7 @@ class Panel:
     image: Image.Image | None
 
 
-@st.cache_data(show_spinner=False)
+
 def _get_client() -> OpenAI:
     """Create a cached OpenAI client using the environment API key."""
     api_key = os.getenv("OPENAI_API_KEY")
